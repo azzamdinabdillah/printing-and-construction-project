@@ -33,7 +33,7 @@
 
 <body class="scrollbar-thin scrollbar-thumb-second scrollbar-track-main scrollbar-rounded-lg">
   <!-- header -->
-  <section class="">
+  <section class="overflow-hidden">
     <div class="navbar">
       <nav class="relative w-full z-10 lg:px-28 px-4 py-4 flex justify-between items-center bg-white xl:bg-[#f2f2f2]">
         <a class="text-xl font-bold leading-none text-slate-800 xl:text-slate-700" href="#">
@@ -332,15 +332,17 @@
   <section>
     <!-- tampilan about us -->
     <div
-      class="container h-[750px] md:h-[100vh] bg-[#F7FAFC] md:max-w-fit xl:w-full xl:flex xl:flex-row-reverse xl:justify-center xl:items-center xl:px-24">
-      <div class="gambar xl:w-1/2" data-aos="fade-up" data-aos-duration="1000">
-        <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_6uhcq95s.json" background="transparent"
-          speed="1" class="w-[90%] md:w-[70%] xl:w-[100%] mx-auto" loop autoplay></lottie-player>
+      class="container py-16 bg-[#F7FAFC] md:max-w-fit xl:w-full xl:flex xl:flex-row-reverse xl:justify-center xl:items-center xl:px-24">
+      <div class="gambar xl:w-1/2 flex flex-col md:flex-row py-5 xl:flex-col">
+        <lottie-player data-aos="fade-up" data-aos-duration="1000" src="https://assets4.lottiefiles.com/packages/lf20_r94DFW.json" background="transparent" speed="1"
+        class="w-[90%] md:w-[70%] xl:w-[60%] mx-auto" loop autoplay></lottie-player>
+        <lottie-player data-aos="fade-up" data-aos-duration="1000" src="https://assets9.lottiefiles.com/private_files/lf30_6uhcq95s.json" background="transparent"
+          speed="1" class="w-[90%] md:w-[70%] xl:w-[60%] mx-auto" loop autoplay></lottie-player>
       </div>
 
       <div
         class="kata w-[80%] xl:w-[50%] h-[350px] bg-[#254866] rounded-tr-xl rounded-br-xl xl:rounded-none xl:bg-[#F7FAFC]"
-        data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        data-aos="fade-right" data-aos-duration="500">
         <h1
           class="text-2xl md:text-4xl flex justify-center xl:justify-start xl:px-10 font-semibold text-white xl:text-slate-700 py-5 md:py-8 font-merry tracking-wider xl:font-bold xl:text-5xl">
           ABOUT US
@@ -363,7 +365,7 @@
   </section>
 
   <!-- why us section -->
-  <section>
+  <section class="overflow-hidden">
     <div class="container py-8 xl:h-[140vh] bg-[#F7FAFC] px-5">
       <h1 class="text-center font-bold text-slate-700 text-3xl py-8">WHY US?</h1>
 
@@ -420,7 +422,7 @@
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="text py-10 md:px-[80px] xl:w-1/2" data-aos="fade-left" data-aos-duration="500">
+        <div class="text py-10 md:px-[80px] xl:w-1/2" data-aos="fade-up" data-aos-duration="500">
           <h1 class="text-slate-700 font-merry font-semibold text-2xl md:text-3xl xl:text-4xl">
             Location
           </h1>
@@ -443,27 +445,38 @@
 
   <!-- our service section -->
   <section>
-    <div class="w-full h-screen md:h-[60vh] xl:h-[70vh] bg-[#F7FAFC]">
+    <div class="w-full py-5 md:h-[60vh] xl:h-[70vh] bg-[#F7FAFC]">
       <h1 class="text-center font-bold font-merry text-3xl py-10">
         OUR SERVICE
       </h1>
 
-      <div class="md:flex md:items-center md:justify-between xl:justify-center xl:mt-20 xl:gap-16">
+    <!-- tampilan mobile -->
+    <div class="md:hidden md:items-center md:justify-between xl:justify-center xl:mt-20 xl:gap-16">
+      <a href="galeryprinting.html" class="relative">
         <div
           class="relative w-[60%] md:w-[40%] xl:w-[20%] my-20 xl:my-0 md:my-12 bg-[#254866] hover:bg-[#004581] rounded-md mx-auto xl:mx-0 h-[20vh] md:h-[20vh] xl:h-[30vh] group transition duration-500"
           data-aos="fade-right" data-aos-duration="500">
           <img src="public/img/printing.png"
             class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-20 w-[80%] md:w-[80%] group-hover:scale-110 transition duration-500 group-hover:-translate-y-24"
             alt="" />
-          <h1
-            class="text-white text-2xl font-bold font-merry tracking-wider absolute bottom-10 left-1/2 -translate-x-1/2 ">
-            PRINTING
-          </h1>
-        </div>
+              <h1 class="text-white text-2xl font-bold font-merry tracking-wider absolute bottom-10 left-1/2 -translate-x-1/2 ">
+                PRINTING
+              </h1>
+              </div>
 
+              <!-- <div class="flex items-center justify-center gap-5 group -translate-y-14">
+                                            <a href="galeryprinting.html"
+                                              class="py-3 px-4 rounded-md font-semibold bg-[#254866] text-white group-hover:bg-[#F4EC97] group-hover:text-black transition duration-300">Printing
+                                              Galery</a>
+                                            <i
+                                              class="fa-solid fa-arrow-right-long text-4xl duration-300 transition text-[#254866] group-hover:text-[#F4EC97]"></i>
+                                          </div> -->
+              </a>
+              
+              <a href="galerycons.html">
         <div
           class="relative w-[60%] md:w-[40%] xl:w-[20%] my-32 xl:my-0 bg-[#254866] hover:bg-[#004581]  rounded-md mx-auto xl:mx-0 h-[20vh] md:h-[20vh] xl:h-[30vh] group transition duration-500"
-          data-aos="fade-left" data-aos-duration="500">
+          data-aos="fade-up" data-aos-duration="500">
           <img src="public/img/konstruksi.png"
             class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-20 w-[80%] md:w-[80%] group-hover:scale-110 transition duration-1000 group-hover:-translate-y-24"
             alt="" />
@@ -472,7 +485,45 @@
             CONSTRUCTION
           </h1>
         </div>
-      </div>
+        <!-- <div class="flex items-center justify-center gap-5 group -translate-y-28 mt-2">
+                          <a href="galeryprinting.html"
+                            class="py-3 px-4 rounded-md font-semibold bg-[#254866] text-white group-hover:bg-[#F4EC97] group-hover:text-black transition duration-300">Construction
+                            Galery</a>
+                          <i
+                            class="fa-solid fa-arrow-right-long text-4xl duration-300 transition text-[#254866] group-hover:text-[#F4EC97]"></i>
+                        </div> -->
+        </a>
+        </div>
+        
+        <!-- tampilan layar tablet dan seterusnta -->
+        <div class="hidden md:flex md:items-center md:justify-between xl:justify-center xl:mt-20 xl:gap-16">
+          <a href="galeryprinting.html"
+            class="relative w-[60%] md:w-[40%] xl:w-[20%] my-20 xl:my-0 md:my-12 bg-[#254866] hover:bg-[#004581] rounded-md mx-auto xl:mx-0 h-[20vh] md:h-[20vh] xl:h-[30vh] group transition duration-500"
+            data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        
+            <img src="public/img/printing.png"
+              class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-20 w-[80%] md:w-[80%] group-hover:scale-110 transition duration-500 group-hover:-translate-y-24"
+              alt="" />
+            <h1 class="text-white text-2xl font-bold font-merry tracking-wider absolute bottom-10 left-1/2 -translate-x-1/2 ">
+              PRINTING
+            </h1>
+        
+          </a>
+        
+        
+          <a href="galerycons.html"
+            class="relative w-[60%] md:w-[40%] xl:w-[20%] my-32 xl:my-0 bg-[#254866] hover:bg-[#004581]  rounded-md mx-auto xl:mx-0 h-[20vh] md:h-[20vh] xl:h-[30vh] group transition duration-500"
+            data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        
+            <img src="public/img/konstruksi.png"
+              class="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-20 w-[80%] md:w-[80%] group-hover:scale-110 transition duration-1000 group-hover:-translate-y-24"
+              alt="" />
+            <h1 class="text-white text-xl font-bold font-merry tracking-wider absolute bottom-10 left-1/2 -translate-x-1/2 ">
+              CONSTRUCTION
+            </h1>
+        
+          </a>
+        </div>
     </div>
   </section>
 
@@ -539,7 +590,7 @@
   </section>
 
   <!-- gallery  -->
-  <section>
+  <!-- <section>
     <div class="min-h-screen flex flex-col justify-evenly lg:gap-8 lg:py-8 md:py-8 bg-[#F7FAFC]">
       <div class="">
         <p class="text-3xl md:py-14 py-10 font-bold text-slate-700 font-merry text-center">GALLERY</p>
@@ -639,7 +690,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <div class="w-full flex flex-col pt-10 py-8 justify-between bg-[#254866]">
